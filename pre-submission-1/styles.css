@@ -1,0 +1,213 @@
+
+/* Reset */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Fuente general para todas las paginas */
+  body {
+    font-family: 'Arial', sans-serif;     /* Fuente principal del sitio */
+    background-color: #0f0f0f;            /* Fondo gris oscuro */
+    color: #e0e0e0;                       /* Texto gris claro */
+    line-height: 1.6;                     /* Espaciado entre lineas */
+    padding: 20px;                        /* Espacio interior del body */
+  }
+  
+  /* ============================== */
+  /*             Header             */
+  /* ============================== */
+  header {
+    background-color: #181818;           /* Color de fondo del header */
+    border-bottom: 2px solid #303030;    /* Linea divisoria debajo del header */
+    padding: 15px 20px;                  /* Espaciado interior del header */
+    display: flex;                       /* Activa flexbox */
+    justify-content: space-between;     /* Logo a la izquierda, nav a la derecha */
+    align-items: center;                /* Centra verticalmente los elementos */
+    flex-wrap: wrap;                    /* permite salto de línea */
+  }
+  
+  /* Contenedor del logo y el titulo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;                           /* Espacio entre imagen y texto */
+  }
+  
+  /* Logo */
+  .logo-caiman {
+    width: 50px;
+    height: auto;                       /* Mantiene la proporcion de la imagen */
+  }
+  
+  /* Titulo */
+  .logo-container h1 {
+    color: #ffffff;
+    font-size: 1.8rem;                  /* Tamaño del título principal */
+  }
+  
+  /* Nav */
+  .navegador ul {
+    list-style: none;                   /* Elimina los puntos de la lista */
+    display: flex;                      
+    gap: 20px;                          /* Espacio entre enlaces */
+  }
+  
+  /*Anchors en Nav*/
+  .navegador a {
+    text-decoration: none;             /* Elimina subrayado de los enlaces */
+    color: #fff;
+    background-color: #ff3c00;         
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;                /* Bordes redondeados */
+  }
+  
+  .navegador a:hover {
+    background-color: #e03a00;         /* Color mas oscuro al pasar el mouse */
+  }
+  
+  /* ============================== */
+  /*              Main              */
+  /* ============================== */
+  main {
+    margin-top: 30px;                   /* Separa header y main */
+  }
+  
+  section {
+    margin-bottom: 50px;               /* Espacio debajo de section */
+  }
+  
+  /* Titulo de seccion*/
+  section h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: center;                /* Centra titulos */
+  }
+  
+  /* Parrafo de seccion */
+  section p {
+    color: #d0d0d0;
+    margin-bottom: 20px;
+    text-align: justify;              /* Justifica el texto */
+    font-size: 1.2rem;
+    max-width: 60%;                   /* Ancho responsive */
+    margin-left: auto;
+    margin-right: auto;               /* Centra el bloque de texto */
+  }
+  
+  /* Imagen principal del index */
+  .img-caiman {
+    display: block;                    /* Necesario para centrar con margin */
+    margin: 0 auto;
+    max-width: 60%;                   /* Se adapta al ancho disponible */
+    height: auto;                     /* Mantiene proporcion original */
+    border: 2px solid #303030;        /* Borde gris oscuro */
+  }
+  
+  /* ============================== */
+  /*             Fechas             */
+  /* ============================== */
+  /* Div de fechas */
+  .fechas {
+    display: flex;
+    justify-content: center;  /* Centra el contenedor .fechas */
+  }
+  
+  .fechas ul {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  
+  
+  /* ============================== */
+  /*             Videos             */
+  /* ============================== */
+  .videos {
+    display: flex;
+    flex-direction: column;          /* Apila los videos verticalmente */
+    gap: 30px;                       /* Espacio entre videos */
+    align-items: center;             /* Centra los videos horizontalmente */
+  }
+  
+  iframe {
+    border: 2px solid #303030;       /* Borde alrededor del video */
+  }
+  
+  /* ============================== */
+  /*     Formulario de contacto     */
+  /* ============================== */
+  form {
+    display: flex;
+    flex-direction: column;          /* Apila los inputs verticalmente */
+    gap: 15px;                       /* Espacio entre campos */
+    max-width: 500px;                /* Ancho maximo del formulario */
+    margin: 0 auto;                  /* Centra el formulario */
+  }
+  
+  label {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #ff3c00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    align-self: center;   /* Centra el boton y reduce su width heredado */
+  }
+  
+  button:hover {
+    background-color: #e03a00;
+  }
+  
+  /* ============================== */
+  /*             Footer             */
+  /* ============================== */
+  footer {
+    background-color: #181818;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #303030;
+  }
+  
+  footer p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Lista de enlaces */
+  .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;         /* Centra horizontalmente los ítems */
+    gap: 20px;
+  }
+  
+  .social-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .social-links a:hover {
+    color: #ffffff;
+  }
+  
