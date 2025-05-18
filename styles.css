@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #1a1a1a;
   color: #ccc;
+  text-align: center;
 }
 
 /* HEADER */
@@ -14,8 +15,7 @@ header {
 
 .banner-img {
   width: 100%;
-  height: auto;
-  display: block;
+  
   max-height: 400px;
   object-fit: contain; 
 }
@@ -23,11 +23,8 @@ header {
 /* INTRO */
 .intro {
   padding: 0px 20px 0 20px;
-  max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  color: #ccc;
-  line-height: 1.4rem;
 }
 
 .intro h1 {
@@ -38,18 +35,15 @@ header {
 
 
 /* MAIN */
-.part1main {
+.part1main,
+.part2main {
   display: flex;
   flex-direction: column;
   gap: 30px;
- 
-  padding: 0 30px ;
+  padding: 0 30px;
   max-width: 900px;
-  margin: 0 auto; 
-}
-
-.maintext {
-  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .projects ul {
@@ -61,17 +55,25 @@ header {
   gap: 15px;
 }
 
-.projects img {
+.projects img,
+.part2main img {
   max-width: 100%;
   height: auto;
 }
 
-.part1main p{
+.part1main p,
+.part2main p {
   font-size: 1.2rem;
   text-align: center;
   border: 1px #ccc solid;
   border-radius: 8px;
   padding: 10px 5px;
+  margin-top: 0;
+}
+
+.part2main {
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
@@ -89,7 +91,7 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
