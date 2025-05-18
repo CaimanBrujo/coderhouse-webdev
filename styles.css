@@ -36,38 +36,21 @@ header {
   line-height: 2rem;
 }
 
-.intro a {
-  color: #ff3c00;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.intro a:hover {
-  text-decoration: underline;
-}
 
 /* MAIN */
-main {
+.part1main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px;
+  place-items: center;
+  padding: 40px;
 }
 
-.project {
-  background-color: #2a2a2a;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.part1main p{
+font-size: 1.2rem;
+text-align:center;
 }
 
-.project-thumb {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 10px;
-  border: 2px solid #333333;
-}
 
 /* FOOTER */
 footer {
@@ -78,7 +61,7 @@ footer {
 
 footer a {
   color: #ccc;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0 10px;
   transition: color 0.3s;
 }
