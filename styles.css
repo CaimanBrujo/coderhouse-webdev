@@ -22,7 +22,7 @@ header {
 
 /* INTRO */
 .intro {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 0 20px;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -40,54 +40,46 @@ header {
 /* MAIN */
 .part1main {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   place-items: center;
   padding: 0 30px ;
   max-width: 900px;
   margin: 0 auto; 
-  
 }
+
+.maintext {
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
 .projects ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  align-items: center;
 }
 
-@media (min-width: 800px) {
-  .part1main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 40px;
-  }
-
-  .projects ul {
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .projects li {
-    flex: none;
-    text-align: center;
-  }
-
-  .part1main p {
-    text-align: center;
-    max-width: 800px;
-  }
+.projects img {
+  max-width: 100%;
+  height: auto;
+  max-height: fit-content;
+  display: block;
 }
 
 .part1main p{
-font-size: 1.2rem;
-text-align:center;
+  font-size: 1.2rem;
+  text-align:center;
+  border: 1px #ccc solid;
+  border-radius: 8px;
+  padding: 10px 5px;
 }
-
 
 /* FOOTER */
 footer {
@@ -105,4 +97,31 @@ footer a {
 
 footer a:hover {
   color: white;
+}
+
+@media (min-width: 550px) {
+  .part1main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+  }
+
+  .projects li {
+    flex: 1;
+    text-align: center;
+    max-width: 250px;
+  }
+
+  .part1main p {
+    text-align: center;
+    max-width: 800px;
+  }
+
 }
