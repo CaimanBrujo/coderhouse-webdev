@@ -22,7 +22,7 @@ header {
 
 /* INTRO */
 .intro {
-  padding: 20px 20px 0 20px;
+  padding: 0px 20px 0 20px;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -42,17 +42,13 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  place-items: center;
+ 
   padding: 0 30px ;
   max-width: 900px;
   margin: 0 auto; 
 }
 
 .maintext {
-  text-align: center;
-}
-
-h2{
   text-align: center;
 }
 
@@ -63,19 +59,16 @@ h2{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: center;
 }
 
 .projects img {
   max-width: 100%;
   height: auto;
-  max-height: fit-content;
-  display: block;
 }
 
 .part1main p{
   font-size: 1.2rem;
-  text-align:center;
+  text-align: center;
   border: 1px #ccc solid;
   border-radius: 8px;
   padding: 10px 5px;
@@ -100,13 +93,8 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
-
-
   .projects ul {
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    
+    flex-direction: row;   
   }
 }
 
