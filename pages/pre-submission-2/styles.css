@@ -27,3 +27,8 @@ body {
     width: 30px;
     fill: var(--white-soft);
 }
+
+.profile-pic{
+    width: 80px;
+    border-radius: 40px;
+}
