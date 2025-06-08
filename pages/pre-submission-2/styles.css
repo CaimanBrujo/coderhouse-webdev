@@ -83,16 +83,36 @@ aside{
     width: 60px;
 }
 
-.profile-pic{
-    width: 80px;
-    border-radius: 40px;
-}
-
-
+/* HEADER */
 header{
     grid-area: header;
     background-color: var(--gray-light);
 }
+
+.header-text p{
+    margin: 0;
+}
+.site-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.header-img{
+    align-self: flex-start;
+}
+
+.profile-pic{
+    width: 80px;
+    border-radius: 40px;
+    border: 2px solid var(--gray-medium);
+}
+
+
+
 
 main{
     grid-area: main;
@@ -101,8 +121,17 @@ main{
 
 footer{
     grid-area: footer;
+    background-color: var(--gray-light);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
 }
 
+.footer-text{
+    margin: 0;
+}
 
 @media (max-width: 768px) {
     .grid-container{
@@ -132,7 +161,7 @@ footer{
         height: auto;
         fill: var(--white-soft);
         background-color: var(--gray-light);
-        padding: 5pxpx;
+        padding: 5px;
         border-radius: 8px;
         border: 1px solid var(--white-soft);
     }
@@ -140,5 +169,4 @@ footer{
     .nav-item-text{
         display: none;
     }
-
 }
