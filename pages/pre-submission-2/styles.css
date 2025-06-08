@@ -51,7 +51,7 @@ main{
     background-color: var(--gray-medium);
 }
 
-.nav-icon{
+.icon{
     width: 30px;
     fill: var(--white-soft);
 }
