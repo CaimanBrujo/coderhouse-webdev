@@ -6,10 +6,12 @@
 
 :root{
     --gray-dark: #222222;
-    --gray-medium: #2d2d2d;
+    --gray-medium: #28292b;
     --gray-light: #3d3d3d;
     --body-black: #141414;
     --white-soft: #f2f2e9;
+    --transition-fast: 0.5s ease;
+    --scale-hover: 1.02;
 }
 
 html{
@@ -21,6 +23,11 @@ body {
     color: var(--white-soft);
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+/* I HATE BOOTSTRAP*/
+p, h1, h2, h3{
+    margin: 0;
 }
 
 .grid-container{
@@ -39,8 +46,9 @@ body {
 /* ASIDE */
 aside{
     grid-area: aside;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-medium);
     padding: 2rem 2rem;
+    border: 1px solid var(--gray-light);
 }
 
 .unordered-list{
@@ -87,12 +95,14 @@ aside{
 header{
     height: 100%;
     grid-area: header;
-    background-color: var(--gray-light);
+    background-color: var(--gray-dark);
+    border: 1px solid var(--gray-light);
 }
 
 .header-text p{
     margin: 0;
 }
+
 .site-header{
     width: 100%;
     display: flex;
@@ -113,24 +123,77 @@ header{
     border: 2px solid var(--gray-medium);
 }
 
-
-
-
+/* MAIN */
 main{
     grid-area: main;
-    background-color: var(--gray-medium);
+    background-color: var(--gray-dark);
     height: 100%;
+    border: 1px solid var(--gray-light);
+}
+
+.main-landing-container{
+    padding: 1rem 2rem;
+}
+
+/* MAIN LANDING REASONS */
+.reasons-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.reasons-title{
+    margin-bottom: 10px;
+}
+
+.reason-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px 15px;
+    border: 1px solid var(--white-soft);
+    border-left: 10px solid var(--white-soft);
+    border-radius: 15px;
+    background-color: var(--gray-medium);
+    transition: transform var(--transition-fast);
+}
+
+.reason-item:hover{
+    transform: scale(var(--scale-hover));
+    cursor: pointer;
+}
+
+.reasons-text{
+    max-width: 85%;
+}
+
+.main-content-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+    align-self: end;
+}
+
+.main-content-icon{
+    transition: transform var(--transition-fast);
+}
+
+.main-content-icon:hover{
+    transform: scale(var(--scale-hover));
+    cursor: pointer;
 }
 
 footer{
     grid-area: footer;
     height: 100%;
-    background-color: var(--gray-light);
+    background-color: var(--gray-medium);
     display: flex;
     align-items: center;
     padding: 1rem;
     gap: 1rem;
     justify-content: center;
+    border: 1px solid var(--gray-light);
 
 }
 
@@ -175,4 +238,9 @@ footer{
         display: none;
     }
 
+    /* MAIN LANDING REASONS */
+    .reasons-grid{
+    display: flex;
+    flex-direction: column;
+    }
 }
