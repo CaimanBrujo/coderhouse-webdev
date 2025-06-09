@@ -56,7 +56,8 @@
   }
   
   /*Anchors en Nav*/
-  .navegador a {
+  .navegador a,
+  .back-to-main {
     text-decoration: none;             /* Elimina subrayado de los enlaces */
     color: #fff;
     background-color: #ff3c00;         
@@ -66,7 +67,8 @@
     border-radius: 6px;                /* Bordes redondeados */
   }
   
-  .navegador a:hover {
+  .navegador a:hover,
+  .back-to-main:hover {
     background-color: #e03a00;         /* Color mas oscuro al pasar el mouse */
   }
   
