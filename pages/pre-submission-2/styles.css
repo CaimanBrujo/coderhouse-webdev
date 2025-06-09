@@ -329,6 +329,19 @@ footer{
     border: 2px solid var(--gray-light);   
 }
 
+/* FLEXBOX PAGE */
+.flex-container-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20PX;
+    justify-content: center;
+}
+
+.flex-item{
+    width: 400px;
+    height: 250px;
+}
+
 
 @media (max-width: 768px) {
     .grid-container{
