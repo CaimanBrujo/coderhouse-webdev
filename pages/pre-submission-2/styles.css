@@ -343,6 +343,15 @@ footer{
     height: 250px;
 }
 
+/* BACK TO MAIN LANDING */
+.back-to-main-land{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
 
 @media (max-width: 768px) {
     .grid-container{
